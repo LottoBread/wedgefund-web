@@ -1,26 +1,98 @@
 @import "tailwindcss";
 
+/*
+ * Wedgefund "clubhouse at dusk" palette — ported 1:1 from the product's
+ * mobile app (src/lib/theme.ts). Dark-only by deliberate product
+ * decision; there is no light theme to fall back to.
+ *
+ * These CSS variables feed Tailwind v4's @theme block below, which turns
+ * each one into utility classes (bg-brand, text-content-muted,
+ * border-surface-border, etc). Components use those utilities rather
+ * than raw hex values.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --wf-brand-tint: #16341f;
+  --wf-brand: #3fa35d;
+  --wf-brand-pressed: #359154;
+  --wf-brand-bright: #5fc97d;
+
+  --wf-surface: #141815;
+  --wf-surface-raised: #1a201b;
+  --wf-surface-elevated: #212820;
+  --wf-surface-hover: #262e24;
+  --wf-surface-border: #333c30;
+
+  --wf-content: #e9ece6;
+  --wf-content-muted: #9aa596;
+  --wf-content-faint: #6d766a;
+
+  --wf-success: #3fa35d;
+  --wf-success-bg: #16341f;
+  --wf-success-text: #6fd08c;
+
+  --wf-warning: #d99a3d;
+  --wf-warning-bg: #332812;
+  --wf-warning-text: #eab767;
+
+  --wf-danger: #d16a54;
+  --wf-danger-bg: #331b16;
+  --wf-danger-text: #e6957f;
+
+  --wf-info: #6bb9cf;
+  --wf-info-bg: #122a30;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+
+  --color-brand-tint: var(--wf-brand-tint);
+  --color-brand: var(--wf-brand);
+  --color-brand-pressed: var(--wf-brand-pressed);
+  --color-brand-bright: var(--wf-brand-bright);
+
+  --color-surface: var(--wf-surface);
+  --color-surface-raised: var(--wf-surface-raised);
+  --color-surface-elevated: var(--wf-surface-elevated);
+  --color-surface-hover: var(--wf-surface-hover);
+  --color-surface-border: var(--wf-surface-border);
+
+  --color-content: var(--wf-content);
+  --color-content-muted: var(--wf-content-muted);
+  --color-content-faint: var(--wf-content-faint);
+
+  --color-success: var(--wf-success);
+  --color-success-bg: var(--wf-success-bg);
+  --color-success-text: var(--wf-success-text);
+
+  --color-warning: var(--wf-warning);
+  --color-warning-bg: var(--wf-warning-bg);
+  --color-warning-text: var(--wf-warning-text);
+
+  --color-danger: var(--wf-danger);
+  --color-danger-bg: var(--wf-danger-bg);
+  --color-danger-text: var(--wf-danger-text);
+
+  --color-info: var(--wf-info);
+  --color-info-bg: var(--wf-info-bg);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: dark;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--wf-surface);
+  color: var(--wf-content);
+}
+
+::selection {
+  background: var(--wf-brand-tint);
+  color: var(--wf-content);
+}
+
+/* Subtle radial glow used behind hero / section headers */
+.wf-glow {
+  background:
+    radial-gradient(60% 55% at 15% 0%, rgba(63, 163, 93, 0.16) 0%, rgba(63, 163, 93, 0) 60%),
+    radial-gradient(45% 40% at 100% 20%, rgba(95, 201, 125, 0.1) 0%, rgba(95, 201, 125, 0) 60%);
 }
