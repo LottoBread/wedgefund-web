@@ -64,10 +64,10 @@ export function Footer() {
             ))}
             <li>
               <a
-                href="mailto:support@wedgefund.club"
+                href="mailto:stringzbeats@icloud.com"
                 className="text-sm text-content-muted transition-colors hover:text-content"
               >
-                support@wedgefund.club
+                Email us
               </a>
             </li>
           </ul>

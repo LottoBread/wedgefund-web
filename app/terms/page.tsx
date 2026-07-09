@@ -237,9 +237,9 @@ export default function TermsPage() {
               <section>
                 <h2 className="text-xl font-semibold text-content">15. Contact</h2>
                 <p className="mt-3">
-                  Questions about these Terms? Email us at{" "}
-                  <a href="mailto:support@wedgefund.club" className="font-medium text-brand-bright hover:text-brand">
-                    support@wedgefund.club
+                  Questions about these Terms?{" "}
+                  <a href="mailto:stringzbeats@icloud.com" className="font-medium text-brand-bright hover:text-brand">
+                    Email us
                   </a>
                   .
                 </p>

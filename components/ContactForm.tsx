@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const SUPPORT_EMAIL = "support@wedgefund.club";
+const SUPPORT_EMAIL = "stringzbeats@icloud.com";
 
 export function ContactForm() {
   const [name, setName] = useState("");
@@ -110,11 +110,17 @@ export function ContactForm() {
 
       <p className="text-xs leading-relaxed text-content-faint">
         There&apos;s no backend behind this form yet — clicking &ldquo;Open in
-        email&rdquo; opens your email app with a message pre-filled and
-        addressed to <span className="text-content-muted">{SUPPORT_EMAIL}</span>,
-        using whatever you&apos;ve typed above. Nothing is sent anywhere until
-        you actually hit send in your own email client. If that&apos;s
-        awkward on your device, just email us directly at the address below.
+        email&rdquo; opens your email app with a message pre-filled, using
+        whatever you&apos;ve typed above. Nothing is sent anywhere until you
+        actually hit send in your own email client. If that&apos;s awkward on
+        your device, you can{" "}
+        <a
+          href={`mailto:${SUPPORT_EMAIL}`}
+          className="font-medium text-content-muted underline hover:text-content"
+        >
+          email us directly
+        </a>{" "}
+        instead.
       </p>
     </form>
   );

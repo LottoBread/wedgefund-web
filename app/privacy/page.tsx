@@ -142,9 +142,9 @@ export default function PrivacyPage() {
                 <h2 className="text-xl font-semibold text-content">7. Your choices and rights</h2>
                 <p className="mt-3">
                   You can access, update, or delete most of your account information
-                  directly in the app. You can also email{" "}
-                  <a href="mailto:support@wedgefund.club" className="font-medium text-brand-bright hover:text-brand">
-                    support@wedgefund.club
+                  directly in the app. You can also{" "}
+                  <a href="mailto:stringzbeats@icloud.com" className="font-medium text-brand-bright hover:text-brand">
+                    email us
                   </a>{" "}
                   to request a copy of your data, ask us to correct it, or ask us to delete
                   your account. Depending on where you live, you may have additional
@@ -189,9 +189,9 @@ export default function PrivacyPage() {
               <section>
                 <h2 className="text-xl font-semibold text-content">11. Contact</h2>
                 <p className="mt-3">
-                  Questions about this policy or your data? Email us at{" "}
-                  <a href="mailto:support@wedgefund.club" className="font-medium text-brand-bright hover:text-brand">
-                    support@wedgefund.club
+                  Questions about this policy or your data?{" "}
+                  <a href="mailto:stringzbeats@icloud.com" className="font-medium text-brand-bright hover:text-brand">
+                    Email us
                   </a>
                   .
                 </p>

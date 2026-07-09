@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Wedgefund. Email support@wedgefund.club directly, or use the contact form to open a pre-filled email.",
+    "Get in touch with Wedgefund. Email us directly, or use the contact form to open a pre-filled email.",
 };
 
 export default function ContactPage() {
@@ -24,10 +24,14 @@ export default function ContactPage() {
             <div>
               <h2 className="text-lg font-semibold text-content">Email us directly</h2>
               <a
-                href="mailto:support@wedgefund.club"
-                className="mt-3 inline-flex items-center gap-2 text-xl font-semibold text-brand-bright hover:text-brand"
+                href="mailto:stringzbeats@icloud.com"
+                className="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-surface transition-colors hover:bg-brand-pressed"
               >
-                support@wedgefund.club
+                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="m4 6 8 6 8-6" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M4 6h16v12H4z" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                Email us
               </a>
               <p className="mt-3 max-w-sm text-sm leading-relaxed text-content-muted">
                 This is the fastest way to reach us. We typically reply within
